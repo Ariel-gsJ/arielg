@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectángulo</title>
+</head>
+<body>
+    <h1>Rectángulo</h1>
+
+    <label for="base">Base:</label>
+    <input id="base" type="number" min="0.01" step="any" placeholder="Ingresa la base">
+
+    <label for="altura">Altura:</label>
+    <input id="altura" type="number" min="0.01" step="any" placeholder="Ingresa la altura">
+
+    <label for="operacion">Operación:</label>
+    <select id="operacion">
+        <option value="area">Área</option>
+        <option value="perimetro">Perímetro</option>
+    </select>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <h3 id="Resultado"></h3>
+
+    <script>
+        function calcular() {
+            const base = parseFloat(document.getElementById('base').value);
+            const altura = parseFloat(document.getElementById('altura').value);
+            const operacion = document.getElementById('operacion').value;
+            const resultado = document.getElementById('Resultado');
+
+            if (isNaN(base) || isNaN(altura) || base <= 0 || altura <= 0) {
+                resultado.textContent = "Por favor, ingresa valores válidos para base y altura.";
+                return;
+            }
+
+            if (operacion === "area") {
+                const area = base * altura;
+                resultado.textContent = "Área: " + area.toFixed(2);
+            } else if (operacion === "perimetro") {
+                const perimetro = 2 * (base + altura);
+                resultado.textContent = "Perímetro: " + perimetro.toFixed(2);
+            }
+        }
+    </script>
+</body>
+</html>
