@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Área y Perímetro del Cuadro</title>
+</head>
+<body>
+
+  <h2>Calculadora de Cuadro</h2>
+
+  <label for="lado">Lado del cuadro:</label>
+  <input type="number" id="lado" placeholder="Ej: 5"><br><br>
+
+  <input type="button" value="Calcular" onclick="calcularCuadro()">
+
+  <h3>Resultado:</h3>
+  <div id="resultado"></div>
+
+  <script>
+    function calcularCuadro() {
+      let lado = document.querySelector("#lado").value;
+      lado = parseFloat(lado);
+
+      if (isNaN(lado) || lado <= 0) {
+        alert("Por favor ingresa un número válido.");
+        return;
+      }
+
+      let area = Math.pow(lado, 2);
+      let perimetro = 4 * lado;
+
+      document.getElementById("resultado").innerHTML =
+        "Área: " + area + " cm²<br>Perímetro: " + perimetro + " cm";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hora de Aventura</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to bottom, #fff7d1, #a2eafc);
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #ffcc00;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    nav {
+      background-color: #ff9900;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 25px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+    .boton-accion {
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 10px 5px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .boton-accion:hover {
+      background-color: #007acc;
+    }
+
+    footer {
+      background-color: #ffcc00;
+      color: black;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .productos img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hora de Aventura</h1>
+    <p>¡Explora el mundo mágico de Finn, Jake y compañía!</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#personajes">Personajes</a>
+    <a href="#historia">Historia</a>
+    <a href="#acciones">Acciones</a>
+    <a href="#productos">Tienda</a>
+    <a href="#nuevos">Nuevos Repartos</a>
+  </nav>
+
+  <section id="inicio">
+    <div class="card">
+      <h2>Bienvenido a la Tierra de Ooo</h2>
+      <p>¡Aquí comienza tu aventura! Descubre personajes mágicos, vive momentos épicos y diviértete con todo lo que Hora de Aventura tiene para ti.</p>
+      <img src="https://i.imgur.com/gz1Mtbm.jpg" alt="Mundo de Ooo">
+    </div>
+  </section>
+
+  <section id="personajes">
+    <div class="card">
+      <h2>Personajes Principales</h2>
+      <ul>
+        <li><strong>Finn:</strong> El héroe humano de gran corazón.</li>
+        <li><strong>Jake:</strong> Perro mágico con habilidades únicas.</li>
+        <li><strong>Princesa Bubblegum:</strong> Genio científica y gobernante del Dulce Reino.</li>
+        <li><strong>Rey Helado:</strong> Hechicero con corona mágica y problemas emocionales.</li>
+        <li><strong>Marceline:</strong> Vampira reina del rock.</li>
+      </ul>
+      <img src="https://i.imgur.com/VPg5jOr.jpg" alt="Personajes de Hora de Aventura">
+    </div>
+  </section>
+
+  <section id="historia">
+    <div class="card">
+      <h2>Resumen de la Aventura</h2>
+      <p>Finn y Jake viajan por la Tierra de Ooo enfrentando criaturas peligrosas, ayudando princesas, luchando contra hechizos, y descubriendo secretos del pasado. Cada episodio es una mezcla única de locura y emoción.</p>
+      <img src="https://i.imgur.com/Uk6ytc5.jpg" alt="Aventura en Ooo">
+    </div>
+  </section>
+
+  <section id="acciones">
+    <div class="card">
+      <h2>Acciones Interactivas</h2>
+      <button class="boton-accion" onclick="alert('¡Hora de la aventura! 🎉')">¡Comenzar Aventura!</button>
+      <button class="boton-accion" onclick="alert('Jake se estira como un globo 🐶✨')">Usar poder de Jake</button>
+      <button class="boton-accion" onclick="alert('¡Llegaste al Dulce Reino 🍬👑!')">Ir al Dulce Reino</button>
+      <button class="boton-accion" onclick="alert('El Rey Helado ha lanzado un hechizo ❄')">Hechizo del Rey Helado</button>
+      <button class="boton-accion" onclick="alert('Marceline toca una canción épica 🎸')">Escuchar a Marceline</button>
+      <button class="boton-accion" onclick="alert('¡Finn ha encontrado una espada legendaria! ⚔')">Espada Legendaria</button>
+    </div>
+  </section>
+
+  <section id="productos">
+    <div class="card productos">
+      <h2>Productos Oficiales</h2>
+      <ul>
+        <li>🎒 Mochila de Finn - $499 MXN</li>
+        <li>🐶 Peluche de Jake - $399 MXN</li>
+        <li>👑 Corona del Rey Helado - $299 MXN</li>
+        <li>📕 Diario de la Princesa Bubblegum - $199 MXN</li>
+        <li>🎸 Guitarra de Marceline (miniatura) - $599 MXN</li>
+      </ul>
+      <img src="https://i.imgur.com/H1aKyeS.jpg" alt="Tienda de productos">
+    </div>
+  </section>
+
+  <section id="nuevos">
+    <div class="card">
+      <h2>Nuevos Repartos y Personajes</h2>
+      <ul>
+        <li><strong>Bronwyn:</strong> La hija de Jake y Lady Arcoiris, skater rebelde.</li>
+        <li><strong>Finn Adulto:</strong> Más sabio y con nuevas misiones.</li>
+        <li><strong>Betty Mago:</strong> Betty convertida en hechicera por amor y locura.</li>
+        <li><strong>BMO Explorador:</strong> BMO en su propia misión espacial.</li>
+      </ul>
+      <img src="https://i.imgur.com/DFQDRMB.jpg" alt="Nuevos personajes de aventura">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Página creada por [G.Ariel,H.Omar,H.Sebastian ] - Proyecto escolar basado en Hora de Aventura
+  </footer>
+
+</body>
+</html>

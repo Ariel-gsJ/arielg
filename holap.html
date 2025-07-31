@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumar Edades</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+
+  <input id="edad1" type="text" required placeholder="Ingresa tu edad 1">
+  <input id="edad2" type="text" required placeholder="Ingresa tu edad 2">
+  <button onclick="sumarEdades()">Enviar</button>
+
+  <script>
+    function sumarEdades() {
+      let edad1 = parseInt(document.querySelector('#edad1').value);
+      let edad2 = parseInt(document.querySelector('#edad2').value);
+
+      // Validar si ambas edades son números válidos
+      if (isNaN(edad1) || isNaN(edad2)) {
+        alert("Por favor ingresa dos edades válidas.");
+        return;
+      }
+
+      let suma = edad1 + edad2;
+
+      if (suma >= 18) {
+        alert("¡Bienvenidos! La suma de sus edades es " + suma);
+      } else {
+        alert("No pueden ingresar. La suma de sus edades es " + suma);
+      }
+    }
+  </script>
+
+  <input type=" text" value="0" placeholder="ingresa un">
+</body>
+</html>
+ 
