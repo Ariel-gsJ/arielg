@@ -1,0 +1,46 @@
+
+  <section id="acciones">
+    <div class="card">
+      <h2>Acciones Interactivas</h2>
+      <button class="boton-accion" onclick="alert('¡Hora de la aventura! 🎉')">¡Comenzar Aventura!</button>
+      <button class="boton-accion" onclick="alert('Jake se estira como un globo 🐶✨')">Usar poder de Jake</button>
+      <button class="boton-accion" onclick="alert('¡Llegaste al Dulce Reino 🍬👑!')">Ir al Dulce Reino</button>
+      <button class="boton-accion" onclick="alert('El Rey Helado ha lanzado un hechizo ❄')">Hechizo del Rey Helado</button>
+      <button class="boton-accion" onclick="alert('Marceline toca una canción épica 🎸')">Escuchar a Marceline</button>
+      <button class="boton-accion" onclick="alert('¡Finn ha encontrado una espada legendaria! ⚔')">Espada Legendaria</button>
+    </div>
+  </section>
+
+  <section id="productos">
+    <div class="card productos">
+      <h2>Productos Oficiales</h2>
+      <ul>
+        <li>🎒 Mochila de Finn - $499 MXN</li>
+        <li>🐶 Peluche de Jake - $399 MXN</li>
+        <li>👑 Corona del Rey Helado - $299 MXN</li>
+        <li>📕 Diario de la Princesa Bubblegum - $199 MXN</li>
+        <li>🎸 Guitarra de Marceline (miniatura) - $599 MXN</li>
+      </ul>
+      <img src="https://i.imgur.com/H1aKyeS.jpg" alt="Tienda de productos">
+    </div>
+  </section>
+
+  <section id="nuevos">
+    <div class="card">
+      <h2>Nuevos Repartos y Personajes</h2>
+      <ul>
+        <li><strong>Bronwyn:</strong> La hija de Jake y Lady Arcoiris, skater rebelde.</li>
+        <li><strong>Finn Adulto:</strong> Más sabio y con nuevas misiones.</li>
+        <li><strong>Betty Mago:</strong> Betty convertida en hechicera por amor y locura.</li>
+        <li><strong>BMO Explorador:</strong> BMO en su propia misión espacial.</li>
+      </ul>
+      <img src="https://i.imgur.com/DFQDRMB.jpg" alt="Nuevos personajes de aventura">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Página creada por [G.Ariel,H.Omar,H.Sebastian ] - Proyecto escolar basado en Hora de Aventura
+  </footer>
+
+</body>
+</html>
