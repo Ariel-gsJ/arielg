@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SPA Vanilla JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<style>* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  background: #222;
+  padding: 1rem;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+main {
+  padding: 2rem;
+  background: white;
+}</style>
+
+
+
+<body>
+
+  <nav>
+    <a href="#/">Inicio</a>
+    <a href="#/about">Acerca de</a>
+    <a href="#/products">Productos</a>
+    <a href="#/contact">Contacto</a>
+  </nav>
+
+  <main id="app"></main>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
