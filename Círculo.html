@@ -1,44 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Círculo</title>
-</head>
-<body>
-    <h1>Círculo</h1>
-
-    <label for="radio">Radio:</label>
-    <input id="radio" type="number" min="0.01" step="any" required placeholder="Ingresa el radio">
-
-    <label for="operacion">Operación:</label>
-    <select id="operacion">
-        <option value="area">Área</option>
-        <option value="perimetro">Perímetro</option>
-    </select>
-
-    <button onclick="calcular()">Calcular</button>
-
-    <h3 id="Resultado"></h3>
-
-    <script>
-        function calcular() {
-            const radio = parseFloat(document.getElementById('radio').value);
-            const operacion = document.getElementById('operacion').value;
-            const resultado = document.getElementById('Resultado');
-
-            if (isNaN(radio) || radio <= 0) {
-                resultado.textContent = "Por favor, ingresa un radio válido (mayor que cero).";
-                return;
-            }
-
-            if (operacion === "area") {
-                const area = Math.PI * Math.pow(radio, 2);
-                resultado.textContent = "Área: " + area.toFixed(2);
-            } else if (operacion === "perimetro") {
-                const perimetro = 2 * Math.PI * radio;
-                resultado.textContent = "Perímetro: " + perimetro.toFixed(2);
-            }
-        }
-    </script>
-</body>
+<html>        
+  <head>        
+    <title>Figura: Circulo</title>        
+  </head>        
+  <body>        
+    <h1 id="circulos">Circulo</h1>        
+    <script>        
+      console.log("holip");        
+      class Circulo {  
+        #area = 0;     
+        #perimetro = 0;                
+        #radio = 0;        
+        constructor(radio) {        
+          this.#radio = radio;        
+        }        
+        calcularArea() {        
+          this.#area = Math.PI * this.#radio * this.#radio;        
+          return this.#area;        
+        }        
+        calcularPerimetro() {        
+          this.#perimetro = 2 * Math.PI * this.#radio;        
+          return this.#perimetro;        
+        }        
+      }        
+      const circulo = new Circulo(5);        
+      const area = circulo.calcularArea();        
+      const perimetro = circulo.calcularPerimetro();        
+    </script>        
+  </body>        
 </html>
